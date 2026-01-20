@@ -16,7 +16,6 @@ GRID_WIDTH = 32
 GRID_HEIGHT = 24
 WIDTH = TILE * GRID_WIDTH
 HEIGHT = TILE * GRID_HEIGHT
-# High score file saved in the game's directory, not outside
 HIGH_SCORE_FILE = os.path.join(os.path.dirname(__file__), "snake_game.highscore")
 
 # Colors - Clean Minimalist Theme
@@ -117,7 +116,6 @@ class Game:
         self.background = self.create_background()
 
     def create_background(self):
-        """Create a simple, clean, and minimalist gaming background"""
         bg = pygame.Surface((WIDTH, HEIGHT))
         
         # Solid dark background - clean and simple
